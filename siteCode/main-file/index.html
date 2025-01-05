@@ -420,6 +420,38 @@
         font-size: 16px;
         margin: 0;
     }
+
+    /* Founder-specific styles */
+    .founder-card {
+        transform: scale(1.1);
+        margin-bottom: 40px;
+    }
+
+    .founder-image {
+        height: 400px !important; /* Make founder image taller */
+    }
+
+    .founder-info h3 {
+        font-size: 32px !important; /* Larger name for founder */
+        margin-bottom: 10px;
+    }
+
+    .founder-info .role {
+        font-size: 20px !important; /* Larger role text for founder */
+        color: #FFA940; /* Match your theme color */
+        font-weight: bold;
+    }
+
+    /* Add some extra spacing between founder and team members */
+    .white-space-30 {
+        height: 30px;
+    }
+
+    /* Enhance hover effect for founder */
+    .founder-card:hover {
+        transform: scale(1.15);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
 </style>
 </head>
 
@@ -437,7 +469,6 @@
     <div class="menu-area">
       <ul class="nav metismenu list-unstyled" id="menu">
         <li><a href="#about-us" class="inner-link">About Us</a></li>
-        <li><a href="#the-team" class="inner-link">The Founder</a></li>
         <li><a href="#the-mission" class="inner-link">The Mission</a></li>
         <li><a href="#big-thank-you" class="inner-link">Big Thank You</a></li>
         <li><a href="#video" class="inner-link">About Us Video</a></li>
@@ -465,10 +496,6 @@
       <li>
         <a href="#about-us" class="inner-link"><span class="sr-only">About Us</span></a>
         <span class="hover-text">About Us</span>
-      </li>
-      <li>
-        <a href="#the-team" class="inner-link"><span class="sr-only">Founder</span></a>
-        <span class="hover-text">Founder</span>
       </li>
       <li>
         <a href="#the-mission" class="inner-link"><span class="sr-only">The Mission</span></a>
@@ -670,108 +697,7 @@
       </section><!-- end about-us section -->
 
       <!-- the-team section -->
-      <section id="the-team" class="page">
-
-        <!-- page content -->
-        <div class="page-content ">
-          <div class="container">
-
-            <!-- title page -->
-            <div class="title-page clearfix">
-              <span>Our Founder</span>
-              <h2>
-                Our Founder
-              </h2>
-              <div class="devider-top"></div>
-              <i class="fa fa-arrow-circle-down"></i>
-              <!-- <p class="text-center">The people making Cheers for Kids<br/> <b>POSSIBLE</b></p> -->
-               <p>The visionary behind Cheers for Kids,<br/> whose passion and dedication make this mission possible.</p>
-              <div class="devider-bottom"></div>
-            </div><!-- end title page -->
-
-            <!-- team -->
-            <div class="row">
-              <div class="col-md-12 col-sm-12">
-                <div class="box-team">
-                  <div class="img-team">
-                    <img src="assets/theme/img/team/Aadya3.png" alt="">
-                    <div class="mask">
-                      <img src="assets/theme/img/team/Aadya3.png" alt="" class="blur">
-                      <ul class="breadcrumb social-team light">
-                        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <!-- <li><a href="#"><i class="fa fa-twitter-square"></i></a></li> -->
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="team-desc">
-                    <h3 class="bold">Aadya Goel</h3>
-                    <p>Founder</p>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="col-md-3 col-sm-6">
-                  <div class="box-team">
-                    <div class="img-team">
-                      <img src="assets/theme/img/team/t-1.png" alt="">
-                      <div class="mask">
-                        <img src="assets/theme/img/team/tblur-1.png" alt="" class="blur">
-                        <ul class="breadcrumb social-team ">
-                          <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                          <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="team-desc">
-                      <h3 class="bold">Jhona Resta</h3>
-                      <p>CEO Founder</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="box-team">
-                    <div class="img-team">
-                      <img src="assets/theme/img/team/t-3.png" alt="">
-                      <div class="mask">
-                        <img src="assets/theme/img/team/tblur-3.png" alt="" class="blur">
-                        <ul class="breadcrumb social-team light ">
-                          <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                          <li><a href="#"><i class="fa fa-tumblr-square"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="team-desc">
-                      <h3 class="bold">Jhona Resta</h3>
-                      <p>CEO Founder</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="box-team">
-                    <div class="img-team">
-                      <img src="assets/theme/img/team/t-4.png" alt="">
-                      <div class="mask">
-                        <img src="assets/theme/img/team/tblur-4.png" alt="" class="blur">
-                        <ul class="breadcrumb social-team ">
-                          <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                          <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="team-desc">
-                      <h3 class="bold">Jhona Resta</h3>
-                      <p>CEO Founder</p>
-                    </div>
-                  </div>
-                </div> -->
-            </div><!-- end team -->
-
-            <div class="white-space-20"></div>
-          </div>
-        </div><!-- end page content -->
+      <section id="progress" class="page">
 
 
         <!-- progress -->
@@ -939,22 +865,39 @@
             <div class="container">
                 <!-- title page -->
                 <div class="title-page clearfix">
-                    <span>Meet The Team</span>
-                    <h2>Meet The Team</h2>
+                    <span>Meet Our Team</span>
+                    <h2>Meet Our Team</h2>
                     <div class="devider-top"></div>
                     <i class="fa fa-arrow-circle-down"></i>
                     <p class="text-center">The people making Cheers for Kids<br/> <b>POSSIBLE</b></p>
                     <div class="devider-bottom"></div>
                 </div>
 
-                <!-- Team members grid -->
+                <!-- Founder Row -->
+                <div class="row team-grid justify-content-center">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="team-member founder-card">
+                            <div class="member-image founder-image">
+                                <img src="assets/theme/img/team/Aadya3.png" alt="Founder" class="img-responsive">
+                            </div>
+                            <div class="member-info founder-info">
+                                <h3>Aadya Goel</h3>
+                                <p class="role">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add some spacing -->
+                <div class="white-space-30"></div>
+
+                <!-- Team Members Row -->
                 <div class="row team-grid">
                     <!-- Team Member 1 -->
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
                             <div class="member-image">
                                 <img src="assets/theme/img/sponsor/geetu.png" alt="Team Member 1" class="img-responsive">
-                                
                             </div>
                             <div class="member-info">
                                 <h3>Geetanjali Prakash</h3>
@@ -968,7 +911,6 @@
                         <div class="team-member">
                             <div class="member-image">
                                 <img src="assets/theme/img/sponsor/saachi.png" alt="Team Member 2" class="img-responsive">
-                               
                             </div>
                             <div class="member-info">
                                 <h3>Saachi More</h3>
@@ -982,7 +924,6 @@
                         <div class="team-member">
                             <div class="member-image">
                                 <img src="assets/theme/img/sponsor/xyz.png" alt="Team Member 3" class="img-responsive">
-                                
                             </div>
                             <div class="member-info">
                                 <h3>Nishi Jayasundra</h3>
